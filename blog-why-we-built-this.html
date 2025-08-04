@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why We Built Greenville Run Clubs - Greenville Run Clubs</title>
+    <meta name="description" content="The story behind creating a simplified app to help runners find clubs in Greenville, SC. No social media required, just the information you need.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-article {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 20px 80px;
+        }
+        
+        .blog-article h1 {
+            font-size: 2.5rem;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+        }
+        
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            flex-wrap: wrap;
+        }
+        
+        .article-content {
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+        
+        .article-content h2 {
+            font-size: 1.8rem;
+            margin: 40px 0 20px 0;
+            color: var(--text-primary);
+        }
+        
+        .article-content h3 {
+            font-size: 1.4rem;
+            margin: 30px 0 15px 0;
+            color: var(--text-primary);
+        }
+        
+        .article-content p {
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+        }
+        
+        .article-content ul {
+            margin-bottom: 20px;
+            padding-left: 30px;
+            color: var(--text-secondary);
+        }
+        
+        .article-content li {
+            margin-bottom: 10px;
+        }
+        
+        .back-to-blog {
+            display: inline-block;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .back-to-blog:hover {
+            text-decoration: underline;
+        }
+        
+        .author-bio {
+            background: var(--background-alt);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 60px;
+        }
+        
+        .author-bio h3 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        
+        .related-posts {
+            margin-top: 60px;
+            padding-top: 60px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .related-posts h3 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+        }
+        
+        .related-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .related-post {
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: transform 0.3s ease;
+        }
+        
+        .related-post:hover {
+            transform: translateY(-5px);
+        }
+        
+        .related-post h4 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .related-post p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🏃‍♂️ Greenville Run Clubs</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#community">Community</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="https://apps.apple.com/us/app/greenvillerunclubs/id6749022264" class="cta-btn">Download App</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <article class="blog-article">
+            <a href="blog.html" class="back-to-blog">← Back to Blog</a>
+            
+            <h1>Why We Built Greenville Run Clubs</h1>
+            
+            <div class="article-meta">
+                <span>📅 February 3, 2025</span>
+                <span>👤 App Creator</span>
+                <span>⏱️ 4 min read</span>
+            </div>
+
+            <div class="article-content">
+                <p>
+                    It started with a simple frustration. Every week, like clockwork, someone would post in the local running Facebook group: "What runs are happening on Monday?" The responses would trickle in over hours, sometimes days. Different people would mention different clubs. Information would be scattered across comments. By the time you pieced it all together, Monday had passed.
+                </p>
+
+                <p>
+                    This pattern repeated endlessly. Tuesday runs? New post. Wednesday? Another post. Weekend long runs? You guessed it. The same questions, week after week, with the same fragmented answers buried in social media threads that would disappear into the algorithm's void.
+                </p>
+
+                <p>
+                    The irony wasn't lost on me. Here we were, in a city with an incredibly active running community, and finding a run club on any given day felt like solving a puzzle. The information existed, but it was trapped in a system that wasn't designed for it.
+                </p>
+
+                <h2>The Social Media Problem</h2>
+
+                <p>
+                    Beyond the organizational chaos, there was another issue. More and more runners I knew were stepping away from social media entirely. They were tired of the noise, the arguments, the endless scrolling. But in doing so, they were cutting themselves off from the running community's primary communication channel.
+                </p>
+
+                <p>
+                    These weren't antisocial people. They wanted to run with others, to be part of the community. They just didn't want to wade through political rants and targeted ads to find out when the track workout was happening.
+                </p>
+
+                <p>
+                    That's when it clicked. We didn't need another social network. We didn't need likes, comments, or shares. We just needed a simple answer to a simple question: "Where can I run today?"
+                </p>
+
+                <h2>Building Something Different</h2>
+
+                <p>
+                    The Greenville Run Clubs app was born from this realization. No frills. No social features. No algorithm deciding what you should see. Just a clean, simple list of run clubs organized by day and time. Open the app, see what's happening today, show up and run.
+                </p>
+
+                <p>
+                    The simplicity is intentional. In a world of feature-bloated apps competing for your attention, we built something that does one thing well. It answers your question and gets out of your way. No account required. No data collection. No push notifications trying to bring you back.
+                </p>
+
+                <h2>The Challenge Ahead</h2>
+
+                <p>
+                    Here's where I need to be honest. Building the app was the easy part. The hard part is keeping the information accurate and complete. Run clubs change their schedules. New groups form. Meeting locations shift with the seasons. Some clubs are better at communicating changes than others.
+                </p>
+
+                <p>
+                    Right now, I'm manually updating the information, reaching out to club leaders, monitoring various channels for changes. It's not sustainable for one person. I need help. I need runners who are connected to their clubs to help maintain their group's information. I need partners who share the vision of making running more accessible.
+                </p>
+
+                <p>
+                    The goal isn't to replace the community aspect of social media. It's to provide a reliable foundation of information that helps people connect in person, where the real community happens. Once you find your club and start showing up regularly, you'll make friends, exchange numbers, and build those relationships offline.
+                </p>
+
+                <h2>Looking Forward</h2>
+
+                <p>
+                    This app is just the beginning. There's so much potential to help runners in Greenville and beyond. But for now, we're keeping it simple. One city, one purpose, one problem solved well.
+                </p>
+
+                <p>
+                    If you're reading this and you want to help, please reach out. Whether you're a club leader who wants to ensure your information stays current, a developer who sees ways to improve the app, or just a runner who believes in the mission, I'd love to hear from you.
+                </p>
+
+                <p>
+                    Together, we can make sure that no runner in Greenville ever has to scroll through a Facebook feed wondering where to run today. The trails are calling, the groups are meeting, and now finding them is as simple as opening an app.
+                </p>
+
+                <p>
+                    See you out there.
+                </p>
+            </div>
+
+            <div class="author-bio">
+                <h3>About the Author</h3>
+                <p>
+                    The creator of Greenville Run Clubs is a local runner who got tired of the same questions appearing in Facebook groups every week. When not updating club information or running on the Swamp Rabbit Trail, they can be found trying to convince more people that running is actually fun.
+                </p>
+            </div>
+
+            <div class="related-posts">
+                <h3>Related Articles</h3>
+                <div class="related-posts-grid">
+                    <a href="blog-first-group-run.html" class="related-post">
+                        <h4>Getting Started: Your First Group Run</h4>
+                        <p>Everything you need to know before joining a running group</p>
+                    </a>
+                    <a href="blog-running-routes.html" class="related-post">
+                        <h4>Best Running Routes in Greenville</h4>
+                        <p>Discover the most scenic and popular running paths throughout the city</p>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🏃‍♂️ Greenville Run Clubs</h3>
+                    <p>Connecting runners in Greenville, South Carolina</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#community">Community</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="mailto:greenvillerunclubs@markgingrass.com">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Greenville Run Clubs. Made with ❤️ for the running community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
