@@ -69,6 +69,44 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
+    // Blog carousel functionality
+    const blogCarousel = document.querySelector('.blog-carousel');
+    const leftNav = document.querySelector('.carousel-nav-left');
+    const rightNav = document.querySelector('.carousel-nav-right');
+
+    if (blogCarousel && leftNav && rightNav) {
+        const scrollAmount = 380; // Card width + gap
+
+        leftNav.addEventListener('click', () => {
+            blogCarousel.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        rightNav.addEventListener('click', () => {
+            blogCarousel.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        // Update navigation button states
+        function updateNavButtons() {
+            const scrollLeft = blogCarousel.scrollLeft;
+            const maxScroll = blogCarousel.scrollWidth - blogCarousel.clientWidth;
+
+            leftNav.style.opacity = scrollLeft <= 0 ? '0.3' : '1';
+            leftNav.style.pointerEvents = scrollLeft <= 0 ? 'none' : 'auto';
+            
+            rightNav.style.opacity = scrollLeft >= maxScroll - 1 ? '0.3' : '1';
+            rightNav.style.pointerEvents = scrollLeft >= maxScroll - 1 ? 'none' : 'auto';
+        }
+
+        blogCarousel.addEventListener('scroll', updateNavButtons);
+        updateNavButtons(); // Initial state
+    }
+
     // Counter animation for stats
     function animateCounter(element, target, duration = 2000) {
         let start = 0;

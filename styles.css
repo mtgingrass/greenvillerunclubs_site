@@ -354,6 +354,80 @@ body {
     margin-bottom: 60px;
 }
 
+/* Blog Carousel */
+.blog-carousel-wrapper {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.blog-carousel {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.blog-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.blog-carousel-track {
+    display: flex;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+.blog-carousel .blog-card {
+    flex: 0 0 350px;
+    max-width: 350px;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: var(--shadow);
+}
+
+.carousel-nav:hover {
+    background: var(--background-alt);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-nav-left {
+    left: -24px;
+}
+
+.carousel-nav-right {
+    right: -24px;
+}
+
+.carousel-nav svg {
+    color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+    .carousel-nav {
+        display: none;
+    }
+    
+    .blog-carousel-track {
+        padding: 10px 20px;
+    }
+}
+
 .blog-card {
     background: white;
     border-radius: 20px;
