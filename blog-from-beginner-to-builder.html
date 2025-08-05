@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Beginner Runner to App Builder - Greenville Run Clubs</title>
+    <meta name="description" content="Mark Gingrass shares his journey as a beginner runner who built an app to solve his own problem finding runs that match his schedule in Greenville.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-article {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 20px 80px;
+        }
+        
+        .blog-article h1 {
+            font-size: 2.5rem;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+        }
+        
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            flex-wrap: wrap;
+        }
+        
+        .article-content {
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+        
+        .article-content h2 {
+            font-size: 1.8rem;
+            margin: 40px 0 20px 0;
+            color: var(--text-primary);
+        }
+        
+        .article-content h3 {
+            font-size: 1.4rem;
+            margin: 30px 0 15px 0;
+            color: var(--text-primary);
+        }
+        
+        .article-content p {
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+        }
+        
+        .article-content ul {
+            margin-bottom: 20px;
+            padding-left: 30px;
+            color: var(--text-secondary);
+        }
+        
+        .article-content li {
+            margin-bottom: 10px;
+        }
+        
+        .back-to-blog {
+            display: inline-block;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .back-to-blog:hover {
+            text-decoration: underline;
+        }
+        
+        .author-bio {
+            background: var(--background-alt);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 60px;
+        }
+        
+        .author-bio h3 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        
+        .related-posts {
+            margin-top: 60px;
+            padding-top: 60px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .related-posts h3 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+        }
+        
+        .related-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .related-post {
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: transform 0.3s ease;
+        }
+        
+        .related-post:hover {
+            transform: translateY(-5px);
+        }
+        
+        .related-post h4 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .related-post p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🏃‍♂️ Greenville Run Clubs</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#community">Community</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="https://apps.apple.com/us/app/greenvillerunclubs/id6749022264" class="cta-btn">Download App</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <article class="blog-article">
+            <a href="blog.html" class="back-to-blog">← Back to Blog</a>
+            
+            <h1>From Beginner Runner to App Builder</h1>
+            
+            <div class="article-meta">
+                <span>📅 August 5, 2025</span>
+                <span>👤 Mark Gingrass</span>
+                <span>⏱️ 5 min read</span>
+            </div>
+
+            <div class="article-content">
+                <p>
+                    Hi, I'm Mark Gingrass, and I'm not what you'd call a natural runner. I'm not fast, I don't have perfect form, and I definitely don't look like the runners you see on magazine covers. I'm just a guy who keeps trying to find runs that match my schedule and found it way harder than it should be.
+                </p>
+
+                <p>
+                    So I built an app about it. Not because I'm some fitness guru or running expert, but because I had a problem and couldn't find a simple solution.
+                </p>
+
+                <h2>The Struggle is Real</h2>
+
+                <p>
+                    Like many people, I've started and stopped running more times than I care to admit. The solo runs never stuck. I'd get motivated, run alone for a few weeks, then life would get busy and the running shoes would collect dust in the closet. Sound familiar?
+                </p>
+
+                <p>
+                    I knew group runs would help with motivation and accountability, but finding them was frustrating. I'd scroll through Facebook groups hoping someone had posted about upcoming runs. I'd check websites that were outdated. I'd ask friends who might know about a Tuesday night group, only to find out they met at 5:30 AM (definitely not happening).
+                </p>
+
+                <p>
+                    The information was scattered everywhere, and as someone trying to get back into running, I didn't have the inside connections to know where all the groups met or when they had changed their schedules.
+                </p>
+
+                <h2>Building What I Needed</h2>
+
+                <p>
+                    I'm a developer by trade, so when I get frustrated by a problem, my instinct is to build a solution. The Greenville Run Clubs app started as a simple idea: what if there was just one place to see all the runs happening each day?
+                </p>
+
+                <p>
+                    No social media noise. No hunting through multiple Facebook groups. No wondering if the information was current. Just open the app, see what's happening today, and show up.
+                </p>
+
+                <p>
+                    I built it for me, honestly. I was tired of the hunt for information taking longer than the actual runs. But as I started sharing it with other runners, I realized I wasn't alone in this frustration.
+                </p>
+
+                <h2>Still Learning, Still Showing Up</h2>
+
+                <p>
+                    Here's the thing: I'm still not a great runner. I'm still figuring out pacing. I still struggle with hills. I'm still the guy checking his watch wondering if he's going too fast or too slow (usually too slow). But I'm showing up more consistently now because finding groups is no longer a barrier.
+                </p>
+
+                <p>
+                    The app has given me access to this incredible running community in Greenville that I didn't even know existed. There are groups for every pace, every distance, every time of day. Welcoming groups full of people who remember what it was like to be new, to be uncertain, to be just trying to build the habit.
+                </p>
+
+                <h2>Community Led, Free Forever</h2>
+
+                <p>
+                    This app isn't a business for me. It's a community tool. I built it to solve my own problem, and now I'm hoping it can help others like me find their place in Greenville's running scene.
+                </p>
+
+                <p>
+                    But I need help to keep it useful. Running clubs change their schedules. New groups form. Meeting locations shift. I can't possibly track all of this alone while also trying to show up to runs myself.
+                </p>
+
+                <p>
+                    That's why I'm starting to show up to more runs and introducing myself. Not as some running expert, but as the guy who built this tool and wants to make sure it serves the community well. I want to hear what runners need, what's missing, and how we can make finding each other easier.
+                </p>
+
+                <h2>An Invitation</h2>
+
+                <p>
+                    If you see me at a run, please come say hi. I'm probably the one looking slightly overwhelmed but trying to keep up. I'd love to hear your thoughts about the app, learn about your group, or just chat about what got you into running.
+                </p>
+
+                <p>
+                    If you're a group leader and want to make sure your information is accurate in the app, please reach out. If you're someone who, like me, has struggled to find consistent running groups, I hope this tool helps.
+                </p>
+
+                <p>
+                    Most importantly, if you're on the fence about joining a group run, just show up. The Greenville running community has been incredibly welcoming to this beginner who built an app to help himself find them. They'll welcome you too.
+                </p>
+
+                <p>
+                    The hardest part isn't the running. It's showing up the first time. The app can help you find where to show up – the rest is just putting one foot in front of the other.
+                </p>
+
+                <p>
+                    See you out there (probably trying to keep up).
+                </p>
+            </div>
+
+            <div class="author-bio">
+                <h3>About Mark Gingrass</h3>
+                <p>
+                    Mark is a developer and beginner runner living in Greenville, SC. When he's not updating the Greenville Run Clubs app or trying to improve his 5K time, he can be found exploring the city's running trails and learning from the local running community. He built this app to solve his own problem and hopes it helps other runners connect with Greenville's amazing groups.
+                </p>
+            </div>
+
+            <div class="related-posts">
+                <h3>Related Articles</h3>
+                <div class="related-posts-grid">
+                    <a href="blog-why-we-built-this.html" class="related-post">
+                        <h4>Why We Built Greenville Run Clubs</h4>
+                        <p>The technical story behind creating a simplified app for finding run clubs</p>
+                    </a>
+                    <a href="blog-first-group-run.html" class="related-post">
+                        <h4>Getting Started: Your First Group Run</h4>
+                        <p>Everything you need to know before joining a running group</p>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🏃‍♂️ Greenville Run Clubs</h3>
+                    <p>Connecting runners in Greenville, South Carolina</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#community">Community</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="mailto:greenvillerunclubs@markgingrass.com">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Greenville Run Clubs. Made with ❤️ for the running community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
